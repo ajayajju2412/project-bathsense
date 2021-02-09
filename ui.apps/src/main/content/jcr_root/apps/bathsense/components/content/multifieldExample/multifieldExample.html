@@ -1,0 +1,20 @@
+<div class="title">FAQs</div>
+
+<br><br>
+
+<!--
+<div data-sly-test="${wcmmode.edit}" class="cq-placeholder" data-emptytext="${component.title}"></div>
+ <div data-sly-test="${wcmmode.edit}" class="cq-placeholder" data-emptytext="${component.title}"></div>
+<div data-sly-use.children="com.adobe.aem.guides.bathsense.core.models.MultifieldModel">
+    <div data-sly-list.faqs="${children.faqsItems.listChildren}" >
+       ${faqs.question} <br> ${faqs.answer} <br><br>
+    </div>
+</div>
+-->
+
+
+<div data-sly-use.children="clientlibs/js/children.js">
+    <div data-sly-list.faqs="${children.faqsItems}" >
+      ${faqs.question} <br> ${faqs.answer} <br><br>
+    </div>
+</div>
