@@ -1,0 +1,15 @@
+<div class="title">USERs</div>
+
+<br><br>
+
+<!--<div data-sly-use.children="com.adobe.aem.guides.bathsense.core.models.UserListModel">-->
+    <div data-sly-list.users="${children.userListItems.listChildren}" >
+        ${users.avatar} <br> ${users.firstName} <br> ${users.lastName} <br> ${users.email} <br><br>
+    </div>
+</div>
+
+<!--<div data-sly-use.children="clientlibs/js/children.js">
+    <div data-sly-list.users="${children.userListItems}" >
+      ${users.avatar} <br> ${users.firstName} <br> ${users.lastName} <br> ${users.email} <br> ${users.avatar} <br><br>
+    </div>
+</div>-->

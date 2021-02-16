@@ -13,8 +13,10 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
+
 package com.adobe.aem.guides.bathsense.core.servlets;
 
+import com.adobe.aem.guides.bathsense.core.models.UserListModel;
 import com.adobe.aem.guides.bathsense.core.services.UserListService;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -22,6 +24,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
+import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.servlets.HttpConstants;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
@@ -32,14 +35,17 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import javax.servlet.Servlet;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
-/**
+/*
  * Servlet that writes some sample content into the response. It is mounted for
  * all resources of a specific Sling resource type. The
  * {@link SlingSafeMethodsServlet} shall be used for HTTP methods that are
  * idempotent. For write operations use the {@link SlingAllMethodsServlet}.
  */
+
 @Component(service=Servlet.class,
            property={
                    "sling.servlet.methods=" + HttpConstants.METHOD_GET,
@@ -60,36 +66,16 @@ public class UserListServlet extends SlingSafeMethodsServlet {
             final SlingHttpServletResponse resp){
 
         try {
-            //LOG.debug("Entry in Servlet");
+            LOG.debug("Entry in Servlet");
 
             String pageNumber = req.getParameter("page");
-            String response = userListService.getUserDetails(pageNumber);
+            String response = userListService.getAPIDetails(pageNumber);
             resp.setContentType("text/plain");
 
-            /*JsonParser jsonParser = new JsonParser();
-            JsonObject jsonObject = (JsonObject) jsonParser.parse(response);
-            JsonElement ans1 = jsonObject.get("total");
-            JsonElement ans2 = jsonObject.get("per_page");
-            JsonElement ans3 = jsonObject.get("total_pages");
-            JsonArray ans4 = (JsonArray) jsonObject.get("data");
-            Iterator<JsonElement> iterator = ans4.iterator();
-            while(iterator.hasNext()) {
-                System.out.println(iterator.next());
-            }*/
+            //Adapting request or resource to a sling model
+            //UserListModel model = req.adaptTo(UserListModel.class);
 
-            JsonParser jsonParser = new JsonParser();
-            JsonObject jsonObject = (JsonObject) jsonParser.parse(response);
-
-            JsonArray arr = jsonObject.getAsJsonArray("data");
-            String email_id = arr.get(0).getAsJsonObject().get("email").getAsString();
-            String firstName = arr.get(0).getAsJsonObject().get("first_name").getAsString();
-            String lastName = arr.get(0).getAsJsonObject().get("last_name").getAsString();
-            String avatar = arr.get(0).getAsJsonObject().get("avatar").getAsString();
-
-            resp.getWriter().write(email_id);
-            resp.getWriter().write(firstName);
-            resp.getWriter().write(lastName);
-            //resp.getWriter().write(avatar);
+            resp.getWriter().write(response);
 
 
         } catch (IOException ioException) {

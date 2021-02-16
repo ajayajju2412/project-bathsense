@@ -1,0 +1,12 @@
+.logo img{
+    height: 49.6px;
+    /* 124 */
+    width: 162.8px; 
+    /* 407 */
+}
+
+.title{
+    font-weight: bold;
+    font-size: larger;
+    font-family: sans-serif;
+}
