@@ -76,39 +76,39 @@
                                                         <formats jcr:primaryType="nt:unstructured">
                                                             <default_p
                                                                     jcr:primaryType="nt:unstructured"
-                                                                    description="Paragraph"
+                                                                    text="Paragraph"
                                                                     tag="p"/>
                                                             <default_h1
                                                                     jcr:primaryType="nt:unstructured"
-                                                                    description="Heading 1"
+                                                                    text="Heading 1"
                                                                     tag="h1"/>
                                                             <default_h2
                                                                     jcr:primaryType="nt:unstructured"
-                                                                    description="Heading 2"
+                                                                    text="Heading 2"
                                                                     tag="h2"/>
                                                             <default_h3
                                                                     jcr:primaryType="nt:unstructured"
-                                                                    description="Heading 3"
+                                                                    text="Heading 3"
                                                                     tag="h3"/>
                                                             <default_h4
                                                                     jcr:primaryType="nt:unstructured"
-                                                                    description="Heading 4"
+                                                                    text="Heading 4"
                                                                     tag="h4"/>
                                                             <default_h5
                                                                     jcr:primaryType="nt:unstructured"
-                                                                    description="Heading 5"
+                                                                    text="Heading 5"
                                                                     tag="h5"/>
                                                             <default_h6
                                                                     jcr:primaryType="nt:unstructured"
-                                                                    description="Heading 6"
+                                                                    text="Heading 6"
                                                                     tag="h6"/>
                                                             <default_blockquote
                                                                     jcr:primaryType="nt:unstructured"
-                                                                    description="Quote"
+                                                                    text="Quote"
                                                                     tag="blockquote"/>
                                                             <default_pre
                                                                     jcr:primaryType="nt:unstructured"
-                                                                    description="Preformatted"
+                                                                    text="Preformatted"
                                                                     tag="pre"/>
                                                         </formats>
                                                     </paraformat>
