@@ -1,0 +1,48 @@
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='bathsense.dropdown'}"/>
+<sly data-sly-use.eventModel="com.adobe.aem.guides.bathsense.core.models.EventModel">
+
+    <div style="text-align:center">
+        <h4>List of Events</h4>
+        <br>
+        <form name="myForm" action="">
+            <select name="months" id="months">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            <!--<br><br>
+            <input type="submit" value="Submit" id="btn">-->
+        </form>
+        <button type="button" >Click Here</button>
+    </div>
+
+    <div id="demo"></div>
+    <br><br>
+    <sly data-sly-list="${eventModel.eventItems}" >
+        <div>
+            <div class="child1" >${item.text}</div>
+            <div class="child2" >${item.description}</div>
+            <div class="child3" >${item.image}</div>
+        </div>
+    </sly>
+
+    <!--<ul data-sly-list="${eventModel.eventItems}" >
+        <li>
+            <div class="child1" >${item.text}</div>
+            <div class="child2" >${item.description}</div>
+            <div class="child3" >${item.image}</div>
+        </li>
+    </ul>-->
+
+</sly>
