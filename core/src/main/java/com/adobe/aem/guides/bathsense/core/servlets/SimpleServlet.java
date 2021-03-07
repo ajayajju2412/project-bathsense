@@ -39,7 +39,7 @@ import java.io.IOException;
            property={
                    "sling.servlet.methods=" + HttpConstants.METHOD_GET,
                    "sling.servlet.resourceTypes="+ "bathsense/components/structure/page",
-                   "sling.servlet.extensions=" + "txt"
+                   "sling.servlet.extensions=" + "xml"
            })
 @ServiceDescription("Simple Demo Servlet")
 public class SimpleServlet extends SlingSafeMethodsServlet {

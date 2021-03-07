@@ -1,8 +1,6 @@
 package com.adobe.aem.guides.bathsense.core.services.impl;
 
 import com.adobe.aem.guides.bathsense.core.services.UserListService;
-
-
 import com.adobe.aem.guides.bathsense.core.utils.HTTPUtils;
 import org.osgi.service.component.annotations.Component;
 import org.slf4j.Logger;
