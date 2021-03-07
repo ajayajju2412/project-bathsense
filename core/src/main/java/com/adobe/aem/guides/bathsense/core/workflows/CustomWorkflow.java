@@ -22,7 +22,7 @@ public class CustomWorkflow implements WorkflowProcess {
      * Overridden method which executes when the workflow is invoked
      */
     @Override
-    public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap metaDataMap) throws WorkflowException {
+    public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap metaDataMap) {
 
         log.info("Executing the workflow");
 

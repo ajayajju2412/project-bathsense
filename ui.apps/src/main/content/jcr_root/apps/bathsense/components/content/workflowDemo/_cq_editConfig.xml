@@ -4,7 +4,7 @@
           cq:inherit="{Boolean}true"
           jcr:primaryType="cq:EditConfig">
     <cq:formParameters
-            jcr:description="This workflow gets the user input and logs them"
+            jcr:text="This workflow gets the user input and logs them"
             jcr:primaryType="nt:unstructured"
             jcr:title="Custom Workflow"
             PROCESS="com.adobe.aem.guides.bathsense.core.workflows.CustomWorkflow"
