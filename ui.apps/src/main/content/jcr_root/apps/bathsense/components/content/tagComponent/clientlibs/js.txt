@@ -1,0 +1,5 @@
+#base=js
+
+jquery.min.js
+tagComponent.js
+
