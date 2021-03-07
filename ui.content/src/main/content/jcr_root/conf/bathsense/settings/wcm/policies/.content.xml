@@ -8,7 +8,7 @@
             <components jcr:primaryType="nt:unstructured">
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <content-default
-                        jcr:description="Policy for editable layout containers"
+                        jcr:text="Policy for editable layout containers"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Bathsense Default"
                         sling:resourceType="wcm/core/components/policy/policy"
@@ -156,43 +156,43 @@
                                     override="true">
                                     <item0
                                         jcr:primaryType="nt:unstructured"
-                                        description="Paragraph"
+                                        text="Paragraph"
                                         tag="p"/>
                                     <item1
                                         jcr:primaryType="nt:unstructured"
-                                        description="Heading 1"
+                                        text="Heading 1"
                                         tag="h1"/>
                                     <item2
                                         jcr:primaryType="nt:unstructured"
-                                        description="Heading 2"
+                                        text="Heading 2"
                                         tag="h2"/>
                                     <item3
                                         jcr:primaryType="nt:unstructured"
-                                        description="Heading 3"
+                                        text="Heading 3"
                                         tag="h3"/>
                                     <item4
                                         jcr:primaryType="nt:unstructured"
-                                        description="Heading 4"
+                                        text="Heading 4"
                                         tag="h4"/>
                                     <item5
                                         jcr:primaryType="nt:unstructured"
-                                        description="Heading 5"
+                                        text="Heading 5"
                                         tag="h5"/>
                                     <item6
                                         jcr:primaryType="nt:unstructured"
-                                        description="Heading 6"
+                                        text="Heading 6"
                                         tag="h6"/>
                                     <item7
                                         jcr:primaryType="nt:unstructured"
-                                        description="Quote"
+                                        text="Quote"
                                         tag="blockquote"/>
                                     <item8
                                         jcr:primaryType="nt:unstructured"
-                                        description="Horizontal Rule (visual line break)"
+                                        text="Horizontal Rule (visual line break)"
                                         tag="hr"/>
                                     <item9
                                         jcr:primaryType="nt:unstructured"
-                                        description="Preformatted"
+                                        text="Preformatted"
                                         tag="pre"/>
                                 </formats>
                             </paraformat>

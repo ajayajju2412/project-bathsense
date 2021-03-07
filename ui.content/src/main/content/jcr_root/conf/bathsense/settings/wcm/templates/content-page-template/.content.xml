@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Template">
     <jcr:content
         cq:templateType="/conf/bathsense/settings/wcm/template-types/content-page"
-        jcr:description="Simple content page for Bathsense"
+        jcr:text="Simple content page for Bathsense"
         jcr:primaryType="cq:PageContent"
         jcr:title="Content Page"
         status="enabled"/>

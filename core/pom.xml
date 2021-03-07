@@ -25,7 +25,7 @@
     </parent>
     <artifactId>aem-guides-bathsense.core</artifactId>
     <name>Bathsense - Core</name>
-    <description>Core bundle for Bathsense</description>
+
     <build>
         <plugins>
             <plugin>
@@ -188,5 +188,7 @@ Bundle-DocURL:
             <groupId>uk.org.lidalia</groupId>
             <artifactId>slf4j-test</artifactId>
         </dependency>
+
+
     </dependencies>
 </project>

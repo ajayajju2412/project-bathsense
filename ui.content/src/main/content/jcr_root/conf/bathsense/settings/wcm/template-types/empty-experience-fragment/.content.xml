@@ -4,7 +4,7 @@
     jcr:primaryType="cq:Template"
     ranking="{Long}1">
     <jcr:content
-        jcr:description="Generic template for empty experience fragments variations"
+        jcr:text="Generic template for empty experience fragments variations"
         jcr:primaryType="cq:PageContent"
         jcr:title="Bathsense Empty Experience Fragment"/>
 </jcr:root>
